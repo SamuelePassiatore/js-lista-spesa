@@ -22,20 +22,20 @@ const shoppingList = [
 ];
 ////console.log(shoppingList.length);
 
-// 3 - Creo il ciclo while;
-let myList = '<ul>';
 let i = 0;
+const myList = document.createElement('ul');
+// 3 - Creo il ciclo while;
 while (i < shoppingList.length) {
     ////console.log(shoppingList[i]);
-    myList += `<li>${shoppingList[i]}</li>`;
-    
+    const myListItems = document.createElement('li');
+    myListItems.append(shoppingList[i]);
+    myList.appendChild(myListItems);
     // Incremento dell'indice
     i++;
 }
-myList += '</ul>';
 
 // 4 - Stampo in pagina i nomi dei prodotti della lista;
-products.innerHTML = myList;
+products.appendChild(myList);
 
 
 
