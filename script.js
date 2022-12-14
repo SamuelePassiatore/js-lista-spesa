@@ -11,3 +11,8 @@ stampare in pagina gli elementi della lista individualmente con un ciclo while.
 3 - Creo il ciclo while;
 4 - Stampo in pagina i nomi dei prodotti della lista;
 */
+
+// 1 - Prendo l'elemento dal DOM;
+const shoppingList = document.getElementById('products');
+console.log(shoppingList);
+
