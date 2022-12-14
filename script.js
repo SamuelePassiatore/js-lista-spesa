@@ -13,6 +13,11 @@ stampare in pagina gli elementi della lista individualmente con un ciclo while.
 */
 
 // 1 - Prendo l'elemento dal DOM;
-const shoppingList = document.getElementById('products');
-console.log(shoppingList);
+const products = document.getElementById('products');
+console.log(products);
 
+// 2 - Creo un array con la lista della spesa;
+const shoppingList = [
+'pane', 'uova', 'formaggio', 'latte', 'acqua'
+];
+console.log(shoppingList.length);
