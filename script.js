@@ -35,7 +35,7 @@ while (i < shoppingList.length) {
 }
 
 // 4 - Stampo in pagina i nomi dei prodotti della lista;
-products.appendChild(myList);
+products.append(myList);
 
 
 
